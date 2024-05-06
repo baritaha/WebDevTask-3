@@ -1,0 +1,639 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Edu+NSW+ACT+Foundation:wght@400..700&family=Exo:ital,wght@0,100..900;1,100..900&family=Rajdhani:wght@300;400;500;600;700&family=Workbench:SCAN@37&family=Yatra+One&display=swap');
+*{
+    font-family:cursive;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    background-color: silver;
+    color: white;
+}
+.wrapper{
+    width: 800px;
+    margin: 20px auto;
+}
+.links{
+    color: silver;
+    margin-bottom: 20px;
+    background-color: black;
+    padding: 15px;
+    border-radius: 7px;
+}
+.links ul{
+    display: flex;
+    justify-content: center;
+}
+.links ul li{
+    margin: 0 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 20px;
+    letter-spacing: 3px;
+    cursor: pointer;
+}
+.links ul li:hover,
+.links ul li.active{
+    color: rgb(84, 191, 226);
+}
+.view-item img{
+    width: 75px;
+}
+.view-main{
+    background-color: #cccccc;
+    color: rgb(94, 94, 94);
+    padding: 10px;
+    border-radius: 7px;
+}
+.view-main .view-item:hover{
+    background-color: white;
+    transition:all 0.8s ease;
+    border-radius: 50px;
+}
+.list-view .view-item{
+    border: 1px solid  lightblue;
+    margin: 10px;
+    padding: 10px 20px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.list-view .view-item:last-child{
+    margin-bottom: 0px;
+}
+.list-view .view-item .vi-left{
+    margin-right: 25px;
+}
+.view-item .title{
+    font-weight: 600;
+}
+.view-item .content{
+    margin: 5px 0;
+    font-size: 14px;
+    line-height:22px ;
+    font-weight: 200;
+}
+.view-item .btn{
+    width:125px;
+    background-color: transparent;
+    border: 1px solid rgb(84, 191, 226);
+    text-align: center;
+    border-radius: 7px;
+    padding: 3px;
+}
+.view-item .btn:hover{
+    background-color: lightblue;
+    color: black;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+}
+.view-main .list-view{
+   display: block;
+}
+.grid-view{
+    width: 100%;
+}
+.grid-view .view-item{
+    width: 230px;
+    border: 1px solid lightblue;
+    padding: 25px;
+    text-align: center;
+    margin: 10px;
+    border-radius: 50px;
+    display: inline-block;
+}
+.grid-view .view-item .vi-left{
+    margin-bottom: 10px;
+}
+.grid-view .view-item .btn{
+    margin: 0px auto;
+}
+.grid-view{
+    display: none;
+}
+/*  ***********************************Our Teams Style******************************************************/
+.teams{
+   margin-top: 60px;
+   text-align: center;
+   min-height: 100vh;
+ 
+}
+.teams h1{
+ font-family: monospace;
+ font-size: 40px;
+ letter-spacing: 3px;
+ margin-bottom: 25px;
+}
+.teams img{
+   width: 130px;
+   height: 130px;
+   border-radius: 50%;
+}
+.teams .out_team{
+ 
+  display: flex;
+  width: auto;
+  justify-content: center;
+}
+.teams .out_team .team_member{
+width: 250px;
+margin: 5px;
+padding: 20px 10px;
+background-color: white;
+
+color: black;
+  
+}
+.teams .out_team .team_member .member_image{
+    background-color: rgb(240, 239, 239);
+    max-width: 190px;
+    width: 100%;
+    height: 190px;
+    margin: 0 auto;
+    border-radius: 50%;
+    
+    cursor: pointer;
+    position: relative;
+} 
+.teams .out_team .team_member .member_image img{
+    width: 100%;
+    height: 100%;
+}
+
+
+.teams .out_team .team_member h3{
+text-transform: uppercase;
+   font-size: 18px;
+   line-height: 18px;
+   letter-spacing: 2px;
+   margin: 15px 0 0;
+}
+
+.teams .team_member{
+   
+  
+   
+}
+.teams .out_team .team_member span{
+  font-size:10px ;
+}
+.teams .out_team .team_member p{
+    margin-top: 20px;
+   font-size: 14px;
+   line-height: 20px;
+}
+.teams .out_team .team_member .social_media{
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 95%;
+    height: 95%;
+    background: rgb(0, 0, 0,0.65);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0);
+    transition: all 0.5s ease;
+}
+.teams .out_team .team_member .social_media a{
+    margin: 0 10px;
+}
+.teams .out_team .team_member .social_media a .fab{
+    color: rgb(182, 178, 178);
+}
+.teams .out_team .team_member .member_image:hover .social_media{
+transform: scale(1);
+
+}
+.teams .out_team .team_member:hover{
+    background-color: #cccccc;
+    transition: all 0.5s ease;
+    box-shadow: black;
+}
+/****************************share button style***********************************************************/
+.share-social{
+   margin-top:20px;
+   margin-left: 45%;
+   min-height: 70vh;
+}
+.share-social .toggle-btn{
+    text-align: center;
+    margin-top: 20px;
+    margin-left: -20px;
+    width: 250px;
+    height: 65px;
+    background-color: transparent;
+    border: 1px solid  white;
+    border-radius: 50px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    
+}
+.share-social .toggle-btn:hover{
+    background-color: #bee1f7;
+    transition: all  1s ease;
+}
+.share-social .toggle-btn ul li a{
+    display: flex;
+    height: 65px;
+    align-items: center;
+    padding: 0 35px;
+}
+.share-social .toggle-btn ul li a.shar-btn{
+    justify-content: center;
+    
+}
+.share-social .toggle-btn ul li a.shar-btn .text{
+    font-weight: 700;
+    font-size: 24px;
+    letter-spacing: 10px;
+    color: blue;
+    text-transform: uppercase;
+    margin-right: 15px;
+}
+.toggle-btn ul li a.shar-btn .icon{
+    width: 35px;
+    height: 35px;
+    background-color: blue;
+    color: white;
+    display: inline-block;
+    border-radius: 50%;
+    transition: all 1s ease;
+    cursor: pointer;
+  position: relative;
+}
+.toggle-btn ul li a .icon i{
+position: absolute;
+top: 50%;
+left: 50%;
+transform:translate(-50%,-50%) ;
+}
+.toggle-btn ul li a.sm .icon{
+    position: relative;
+    width: 35px;
+    height: 35px;
+    background-color: rgb(22, 22, 250,0.5);
+    color: white;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+.toggle-btn ul li a .text{
+    letter-spacing: 2px;
+}
+.toggle-btn ul li a.facbook .icon{
+    background: #0571E6;
+}
+.toggle-btn ul li a.facbook .text{
+    color: #3b5998;
+}
+.toggle-btn ul li a.twitter .icon{
+    background: #1DA1F2;
+}
+.toggle-btn ul li a.twitter .text{
+    color: #1DA1F2;
+}
+.toggle-btn ul li a.instagram .icon{
+    background: #C13584;
+}
+.toggle-btn ul li a.instagram .text{
+    color: #C13584;
+}
+.toggle-btn ul li a.reddit .icon{
+    background: #ff4500;
+}
+.toggle-btn ul li a.reddit .text{
+    color: #ff4500;
+}
+.toggle-btn.active{
+    height: 325px;
+}
+.toggle-btn.active ul li a.shar-btn .icon{
+    transform: rotate(45deg);
+}
+
+/************************Cards***************************************************************************/
+.parentCard h1{
+   text-align: center;
+}
+.cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    min-height: 100vh;
+    margin: 40px 40px 0 60px;
+  
+   
+}
+.cards .card{
+    position: relative;
+    min-width: 320px;
+    height: 440px;
+    box-shadow: inset 5px 5px 5px #3388ff,
+                inset -5px -5px 15px #77ccff,
+                 5px 5px 15px #3388ff,
+                 -5px -5px 15px #77ccff;
+    border-radius: 15px;
+    margin: 30px;
+}
+
+.cards .card .box{
+    position: absolute;
+    top:20px;
+    left:20px;
+    right: 20px;
+    bottom: 20px;
+    background-color: lightblue;
+    border: 2px solid blue;
+    border-radius: 15px;
+    box-shadow: 0 20px 50px rgb(0, 0, 0,0.5);
+    transition: 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.cards .card .box::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(-90deg, rgba(118, 123, 126, 0.6), transparent);
+  
+    pointer-events: none;
+    }
+.cards .card .box:hover{
+    transform: translateY(-50px);
+    box-shadow: 0 40px 70px rgb(0, 0, 0,0.5);
+    
+}
+.cards .card .box .cont{
+    padding: 20px;
+    text-align: center;
+}
+.parentCard .cards .card .box .cont h2{
+    position: absolute;
+  top: -25px;
+    right: 30px;
+    font-size: 8em;
+    color: rgb(192, 192, 192,0.5);
+  
+  
+}
+.parentCard .cards .card .box .cont h3{
+    font-size: 1.8em;
+    color: black;
+    transition: 0.5s;
+    z-index: 2;
+}
+.cards .card .box .cont p{
+    font-size: 16px;
+    font-weight: 600;
+    color: black;
+    z-index: 1 ;
+    transition: 0.5s;
+}
+.cards .card .box .cont a{
+ position: relative;
+ display: inline-block;
+ padding: 8px 20px;
+ background-color: #3b5998;
+ margin-top: 15px;
+ border-radius: 20px;
+ text-decoration: none;
+ font-weight: 400;
+ color: #fff;
+}
+
+ .cards .card:nth-child(1) .box .cont a{
+    background-color:lightgreen;
+}
+.cards .card:nth-child(2) .box .cont a{
+    background-color:lightsalmon;
+}
+.cards .card:nth-child(3) .box .cont a{
+    background-color:rgb(136, 208, 253);
+}
+.cards .card .box .cont a:hover{
+    background-color: #3b5998c7;
+    transition: 0.5s;
+}
+
+/**********************************products style**************************************************/
+
+.containerPro{
+    position: relative;
+   display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: 100vh;
+    transform-style: preserve-3d;
+}
+.p{
+    text-align: center;
+}
+.containerPro .boxPro{
+    position: relative;
+    width: 350px;
+    height: 400px;
+    margin: 40px;
+    display: inline-flex;
+    background-color: rgb(24, 24, 24,0.5);
+    border-radius: 20px;
+    transform-style: preserve-3d;
+}
+.containerPro .boxPro:before{
+    content: "NIKE";
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 6em;
+    font-weight: 900;
+    font-style: italic;
+    font-family:Arial, Helvetica, sans-serif;
+    opacity: 0;
+    transition: 0.5s;
+}
+.containerPro .boxPro:after{
+    content: "Shoes";
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    font-size: 6em;
+    font-weight: 900;
+    font-style: italic;
+    font-family:Arial, Helvetica, sans-serif;
+    opacity: 0;
+    transition: 0.5s;
+}
+.containerPro .boxPro:hover:after,
+.containerPro .boxPro:hover:before{
+    opacity: 0.05;
+}
+.containerPro .boxPro .name{
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    transform-style: preserve-3d;
+    color: #fff;
+    width: 100%;
+    transform: translate3d(0,0,75px);
+    transition: 0.5s;
+    opacity: 0;
+    z-index: 10;
+
+}
+.containerPro .boxPro:hover .name{
+top: 40px;
+opacity: 1;
+}
+.containerPro .boxPro .buy{
+    position: absolute;
+    bottom: 0;
+    left: 38%;
+    transform-style: preserve-3d;
+    transform: translate3d(0,0,75px);
+    color: #fff;
+    background-color: #333;
+    padding: 10px 25px;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: 0.5s;
+    opacity: 0;
+    z-index: 10;
+
+}
+.containerPro .boxPro:hover .buy{
+   bottom: 30px;
+    opacity: 1;
+    }
+
+.containerPro .boxPro .circle{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: #fff;
+    transform-style: preserve-3d;
+    opacity: 1;
+    transform: translate3d(-50%,-50%,50px);
+}
+.containerPro .boxPro .product{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    max-width: 300px;
+    transition: 0.5s;
+    z-index: 11;
+    transform-style: preserve-3d;
+    transform: translate3d(-50%,-50%,50px);
+}
+.containerPro .boxPro:hover .product{
+    transform: translate3d(-50%,-50%,50px);
+}
+.containerPro .boxPro:nth-child(3) .buy,
+.containerPro .boxPro:nth-child(3) .circle{
+    background-color: #005A9D;
+}
+.containerPro .boxPro:nth-child(2) .buy,
+.containerPro .boxPro:nth-child(2) .circle{
+    background-color: #3C3638;
+}
+.containerPro .boxPro:nth-child(1) .buy,
+.containerPro .boxPro:nth-child(1) .circle{
+    background-color: #B2A663;
+}
+/***************************Do List Style**********************************************************/
+.parentlist{
+    min-height: 100vh;
+   
+}
+.parentlist .Dolist h2{
+    background-color: #1DA1F2;
+    padding: 10px 20px;
+    font-weight: 600;
+    color: #fff;
+}
+.parentlist .Dolist{
+    position: absolute;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    margin-left: 42%;
+   
+   margin-top: 5%;
+   color: aqua;
+}
+.Dolist ul{
+    position: relative;
+    padding: 20px;
+}
+.Dolist ul li{
+    position: relative;
+    list-style: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 15px 0;
+   
+}
+.Dolist ul li:last-child{
+    border-bottom: none;
+}
+.Dolist ul li label{
+    position: relative;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    cursor: pointer;
+}
+.Dolist ul li label input{
+    visibility: hidden;
+    appearance: none;
+}
+.Dolist ul li label p{
+    position: absolute;
+}
+.Dolist ul li label span{
+    position: relative;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Dolist ul li label span:before{
+    content: '';
+    position: absolute;
+    top: 5px;
+    width: 10px;
+    height: 5px;
+    border-left: 2px solid #ccc;
+    border-bottom:  2px solid #ccc;
+    transform: rotate(-40deg);
+}
+.Dolist ul li label input:checked ~p{
+    text-decoration: line-through;
+    text-decoration-color:blue ;
+    color: #ccc;
+}
+.Dolist ul li label input:checked ~span{
+   background-color: #3388ff;
+   border: 1px solid  #3388ff;
+}
+.Dolist ul li label input:checked ~span::before{
+border-left: 2px solid #fff;
+border-bottom: 2px solid #fff;
+}
